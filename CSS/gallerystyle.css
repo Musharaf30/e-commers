@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dangrek&family=DynaPuff:wght@400..700&family=Mansalva&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dangrek&family=DynaPuff:wght@400..700&family=Mansalva&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dangrek&family=DynaPuff:wght@400..700&family=Mansalva&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap');
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+                                                            /* FIRST CONTAINER */
+
+.about{
+    background: linear-gradient(to bottom,#013220,#c3b091);;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5% 0% 1.5% 0%;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 8%;
+    width: 95%;
+    border-radius: 20px;
+    position: fixed;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    top: 2%;
+    left: 2.5%;
+    z-index: 5;
+    backdrop-filter: blur(29px);
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+nav a:hover{
+    scale: 1.05;
+    text-shadow: 1px 1px 5px white;
+    transition-duration: 1s;
+}
+
+.ab1{
+    background-color: transparent;
+    height: 100%;
+    width: 25%;
+    position: relative;
+}
+
+.ab1 .image1{
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    border-radius: 20px;
+    animation-name: i1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes i1 {
+    0%{
+        top:5%;
+    }
+
+    50%{
+        top: 25%;
+    }
+
+    100%{
+        top: 5%;
+    }
+}
+
+.ab1 .image2{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    border-radius: 20px;
+    left: 5%;
+    bottom: 10%;
+    animation-name: i2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes i2 {
+    0%{
+        bottom: 10%;
+    }
+
+    50%{
+        bottom:20%;
+    }
+
+    100%{
+        bottom:10%
+    }
+}
+
+.ab2{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.bot{
+    background-color: transparent;
+    height: 15%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bot button{
+    height: 45%;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.ab2 img{
+    height:50%;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.ab2 p{
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.ab2 h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ab2 h1+h1{
+    text-decoration: underline;
+}
+
+.ab3{
+    background-color: transparent;
+    height: 100%;
+    width: 25%;
+    position: relative;
+}
+
+.ab3 .image3{
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    border-radius: 20px;
+    animation-name: i3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes i3 {
+    0%{
+        bottom:5%;
+    }
+
+    50%{
+        bottom: 25%;
+    }
+
+    100%{
+        bottom: 5%;
+    }
+}
+
+.ab3 .image4{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    border-radius: 20px;
+    left: 5%;
+    top: 10%;
+    animation-name: i4;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes i4 {
+    0%{
+        top: 10%;
+    }
+
+    50%{
+        top:20%;
+    }
+
+    100%{
+        top:10%
+    }
+}
+
+
+                                                            /* SECOND CONTAINER */
+
+.rooms{
+    background: linear-gradient(to bottom,#013220,black);
+    height: 200vh;
+    width: 100%;
+}
+
+.head{
+    background-color: transparent;
+    height: 5%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section-gallery{
+    background-color: transparent;
+    height: 90%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery{
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+.gallery:hover{
+    scale: 1.05;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.g1{
+    height: 43%;
+    width: 35%;
+    left: 2.5%;
+    top: 8%;
+}
+
+.g1:hover~.g2-1{
+    left: 2.5%;
+    transition-duration: .5s;
+}
+
+.g2{
+    height: 25%;
+    width: 25%;
+    right: 2.5%;
+    top: 8%;
+}
+
+.g2:hover~.g2-2{
+    right: 2.5%;
+    transition-duration: .5s;
+}
+
+.g3{
+    height: 25%;
+    width: 25%;
+    right: 32.5%;
+    top: 8%;
+}
+
+.g3:hover~.g2-3{
+    top:8%;
+    transition-duration: .5s;
+}
+
+.g4{
+    background-color: white;
+    height: 30%;
+    width: 50%;
+    top: 38%;
+    left: 45%;
+}
+
+.g4:hover~.g2-4{
+    left: 45%;
+    transition-duration: .5s;
+}
+
+.g5{
+    height: 43%;
+    width: 35%;
+    left: 2.5%;
+    bottom: 2%;
+}
+
+.g5:hover~.g2-5{
+    left: 2.5%;
+    transition-duration: .5s;
+}
+
+.g6{
+    height: 25%;
+    width: 25%;
+    right: 32.5%;
+    bottom: 2%;
+}
+
+.g6:hover~.g2-6{
+    bottom: 2%;
+    transition-duration: .5s;
+}
+
+.g7{
+    height: 25%;
+    width: 25%;
+    right: 2.5%;
+    bottom: 2%;
+}
+
+.g7:hover~.g2-7{
+    right: 2.5%;
+    transition-duration: .5s;
+}
+
+.gallery2{
+    background: linear-gradient(to bottom,lightblue,pink);
+    border-radius: 20px;
+    position: absolute;
+    padding: 1%;
+}
+
+.gallery2 h1{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.gallery2 p{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.g2-1{
+    height: 43%;
+    width: 35%;
+    left: -50%;
+    top: 8%;
+}
+
+.g2-1 p{
+    font-size: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+.g2-1 button{
+    height: 7%;
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 2.5%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.g2-2{
+    height: 25%;
+    width: 25%;
+    right: -50%;
+    top: 8%;
+}
+
+.g2-2 p{
+    font-size: 25px;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+
+.g2-2 button{
+    height: 12%;
+    width: 35%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.g2-3{
+    height: 25%;
+    width: 25%;
+    right: 32.5%;
+    top: -50%;
+}
+
+.g2-3 p{
+    font-size: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+
+.g2-3 button{
+    height: 12%;
+    width: 35%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.g2-4{
+    background-color: white;
+    height: 30%;
+    width: 50%;
+    top: 38%;
+    left: 110%;
+}
+
+.g2-4 p{
+    font-size: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.g2-4 button{
+    width: 20%;
+    height: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.g2-5{
+    height: 43%;
+    width: 35%;
+    left: -50%;
+    bottom: 2%;
+}
+
+.g2-5 p{
+    font-size: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+.g2-5 button{
+    height: 7%;
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 2.5%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.g2-6{
+    height: 25%;
+    width: 25%;
+    right: 32.5%;
+    bottom: -50%;
+}
+
+.g2-6 p{
+    font-size: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.g2-6 button{
+    height: 12%;
+    width: 35%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.g2-7{
+    height: 25%;
+    width: 25%;
+    right: -50%;
+    bottom: 2%;
+}
+
+.g2-7 p{
+    font-size: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.g2-7 button{
+    height: 12%;
+    width: 35%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.head h1{
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    padding: 2%;
+}
+
+                                                        /* THIRD-CONTAINER */
+
+.third-container{
+    background: linear-gradient(to bottom,#013220,#c3b091);
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.third-container h1{
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.sec-1{
+    background-color: white;
+    height: 50%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.sec-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.fecilities{
+    background-color: transparent;
+    height: 35%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fec-information{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fec-information h3{
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fec-information p{
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fec-information button{
+    height: 10%;
+    width: 20%;
+    margin-top: 5%;
+    font-weight: 600;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    
+    
+    .about{
+        height: 310vh;
+        width: 100%;
+        flex-direction: column;
+        gap: 1%;
+    }
+
+    .ab1{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .ab2{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .ab3{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .bot{
+        width: 100%;
+    }
+
+    .bot button{
+        height: 55%;
+        width: 40%;
+    }
+
+    /* SECOND CONTAINER */
+
+    .rooms{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .gallery{
+        height: 50%;
+        width: 100%;
+        top: 40%;
+        left: 0%;
+    }
+
+    .head{
+        position: absolute;
+        top: 13%;
+        left: 35%;
+        text-align: center;
+    }
+
+    .section-gallery{
+        height: 60vh;
+        top: 40%;
+        overflow-x: scroll;
+    }
+
+    .gallery{
+        top: 5%;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .gallery2{
+        top: 5%;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .g1{
+        left: 0%;
+    }
+
+    .g2-1{
+        left: 0%;
+    }
+
+    .g2-1 p{
+        font-size: 10px;
+    }
+
+    .g2-1 button{
+        width: 40%;
+        height: 10%;
+    }
+
+     .g2{
+        left: 105%;
+    }
+
+    .g2-2 p{
+        font-size: 20px;
+    }
+
+    .g2-2 button{
+        width: 40%;
+        height: 10%;
+    }
+
+    .g2-2{
+        left: 105%;
+    }
+
+    .g3{
+        left: 210%;
+    }
+
+    .g2-3{
+        left: 210%;
+    }
+
+    .g4{
+        left: 315%;
+    }
+
+    .g4:hover~.g2-4{
+        left: 315%;
+    }
+
+    .g2-4{
+        left: 315%;
+    }
+
+    .g2-4 p{
+        font-size: 10px;
+    }
+
+    .g2-4 button{
+        width: 30%;
+        height: 10%;
+    }
+
+    .g5{
+        left: 420%;
+    }
+
+    .g5:hover~.g2-5{
+        left: 420%;
+    }
+
+    .g2-5{
+        left: 420%;
+    }
+
+    .g2-5 p{
+        font-size: 10px;
+    }
+
+    .g2-5 button{
+        width: 30%;
+        height: 10%;
+    }
+
+    .g6{
+        left: 525%;
+    } 
+
+    .g2-6{
+        left: 525%;
+    }
+
+    .g7{
+        left: 630%;
+    }
+
+    .g2-7{
+        left: 630%;
+    }
+
+    .third-container{
+        width: 100%;
+        height: 220vh;
+    }
+
+    .third-container h1{
+        font-size: 30px;
+    }
+
+    .sec-1{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .fecilities{
+        flex-direction: column;
+        height: 150vh;
+        gap: 2%;
+    }
+
+    .fec-information{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .fec-information h3{
+        font-size: 20px;
+    }
+
+    .fec-information p{
+        font-size: 20px;
+    }
+
+    .fec-information button{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1024px) {
+    
+    .about{
+        height: 310vh;
+        width: 100%;
+        flex-direction: column;
+        gap: 1%;
+    }
+
+    .ab1{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .ab2{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .ab3{
+        width: 100%;
+        height: 100vh;
+    }
+
+}

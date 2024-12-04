@@ -1,0 +1,854 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+.over-container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* FIRST CONTAINER */
+.container-1st {
+    background-color: green;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-1st video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+@keyframes img {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.headding {
+    background-color: transparent;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    animation-name: head;
+    animation-duration: 2s;
+}
+
+@keyframes head {
+        0%{
+            top: -100%;
+        }
+
+        100%{
+            top:20%;
+        }
+}
+
+.container-1st button {
+    height: 10%;
+    width: 20%;
+    background-color: brown;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    top: 5%;
+    display: flex;
+    z-index: 999;
+    animation-name: nav;
+    animation-duration: 2s;
+    color: white;
+}
+
+nav .bar {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+@keyframes nav {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 5%
+    }
+}
+
+.navcontent {
+    background-color: transparent;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    position: relative;
+    left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: con;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes con {
+    0% {
+        left: -700px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 10%;
+        opacity: 1;
+    }
+}
+
+.navsearch {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 20%;
+    position: relative;
+    left: 15%;
+    opacity: 0;
+    animation-name: req;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.navcontent a:hover {
+    scale: 1.2;
+    text-shadow: 2px 2px 3px white;
+    transition-duration: 1s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navsearch i {
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.req {
+    background-color: black;
+    height: 80%;
+    width: 60%;
+    position: absolute;
+    left: 30%;
+    top: 9%;
+    text-align: center;
+    padding-top: 8%;
+    font-weight: 600;
+}
+
+@keyframes req {
+    0% {
+        top: -90%;
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        top: 0%;
+        opacity: 1;
+        display: unset;
+    }
+}
+
+/* SECOND CONTAINER */
+
+.container-2nd {
+    background-image: url("https://cdn.pixabay.com/photo/2014/08/06/14/27/wood-411643_640.jpg");
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    overflow: hidden;
+}
+
+.service {
+    background-color: transparent;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sm-img {
+    background-color: brown;
+    height: 13%;
+    width: 22%;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm-img {
+    font-size: 30px;
+
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 23%;
+    position: relative;
+    padding: 2%;
+    box-shadow: 3px 3px 3px black;
+}
+
+.box:hover {
+    scale: 1.05;
+    transition-duration: 1s;
+    color: brown;
+}
+
+.box:hover .sm-img i {
+    color: white;
+    rotate: 360deg;
+    transition-duration: 2s;
+}
+
+.img-box {
+    background-color: plum;
+    height: 40%;
+    width: 100%;
+}
+
+.service img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box h3 {
+    margin-top: 20%;
+}
+
+.container-2nd h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.container-2nd h1+h1 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* THIRD CONTAINER */
+
+.container-3rd {
+    background-image: url("https://plus.unsplash.com/premium_photo-1675369697207-705d6e31e732?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdvb2RlbiUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+    height: 100vh;
+    width: 100%;
+    padding: 2%;
+}
+
+.container-3rd h1 {
+    margin-left: 35%;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 1%;
+}
+
+.div-team {
+    background-color: transparent;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-image {
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+
+.div-team input{
+    display: none;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    background-image: linear-gradient(to right, black 30%, grey 60%, transparent);
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.name h3 {
+    font-size: 45px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    margin-left: 5%;
+    text-shadow: 1px 1px 2px white;
+}
+
+.name p {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px white;
+    margin-left: 10%;
+    color: white;
+    position: relative;
+    top: 50%;
+    opacity: 0;
+}
+
+.team-image:hover .name p{
+    top: 0%;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+/* FOURTH CONTAINER */
+
+.container-4th {
+    background-image: url("https://plus.unsplash.com/premium_photo-1675264751306-d100a1b3934c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdvb2RlbiUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+}
+
+.overall {
+    background-color: transparent;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed {
+    background-color: transparent;
+    height: 100%;
+    width: 30%;
+    padding: 2%;
+}
+
+.feed h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+.feed h1+p {
+    font-size: 20px;
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+
+.feed h1+p+p {
+    line-height: 150%;
+}
+
+.feed input {
+    height: 8%;
+    width: 50%;
+    margin-top: 10%;
+    background-color: white;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    padding: 2%;
+}
+
+.feed input:hover{
+    scale: 1.10;
+    transition-duration: 2s;
+}
+
+.feed i{
+    font-size: 40px;
+    margin-top: 10%;
+    margin-right: 5%;
+    color: white;
+}
+
+.feed i:hover{
+    rotate: 360deg;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.feed h1 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+.feed h1+p {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+}
+
+.feed p+p {
+    font-weight: 600;
+}
+
+span {
+    color: brown;
+}
+
+.otherser {
+    background-color: transparent;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.b {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    padding-left: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 9%;
+    align-items: start;
+    position: relative;
+    border-radius: 10px;
+}
+
+.otherser p {
+    font-size: 20px;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+}
+
+.otherser h1 {
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.otherser .b:hover{
+    scale: 1.05;
+    transition-duration:2s;
+}
+
+.otherser .b p:hover{
+    color: brown;
+    transition-duration: 1s;
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.feed h1 i{
+    color: brown;
+}
+
+.hammer{
+    position: absolute;
+    top: -85%;
+    left: -11%;
+    animation-name: hammer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+span{
+    position: relative;
+    animation-name: wood;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+ @keyframes wood {
+    0%{
+        left: 0%;
+    }
+
+    50%{
+        left: 0.5%;
+    }
+
+    100%{
+        left: 0%;
+    }
+} 
+
+ @keyframes hammer {
+    0%{
+        rotate: 0deg;
+    }
+
+    50%{
+        rotate: -20deg;
+    }
+
+    100%{
+        rotate: 0deg;
+    }
+} 
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    .over-container {
+        background-color: green;
+        width: 600px;
+        height: 910vh;
+        overflow: hidden;
+    }
+
+    .container-1st {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container-1st video{
+        height: 100%;
+        width: 600px;
+    }
+
+    .container-1st img {
+        width: 600px;
+    }
+
+    nav .bar {
+        display: unset;
+        right: -10%;
+        top: -35%;
+        font-size: 40px;
+    }
+
+    nav {
+        left: -100%;
+        height: 5%;
+        font-size: 13px;
+    }
+
+    .req {
+        padding-top: auto;
+    }
+
+    .navsearch {
+        width: 30%;
+    }
+
+    .nav i {
+
+        font-size: 1px;
+    }
+
+    nav:hover {
+        left: 0%;
+        transition-duration: 2s;
+    }
+
+    i:hover {
+        color: transparent;
+    }
+
+    .headding {
+        font-size: 20px;
+        top: 200px;
+        left: 220px;
+    }
+
+    .container-1st button {
+        height: 15%;
+        width: 80%;
+    }
+
+    /* SECOND CONTAINER */
+
+    .container-2nd {
+        width: 100%;
+        height: 450vh;
+    }
+
+    .container-2nd h1 {
+        font-size: 30px;
+    }
+
+    .service {
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .box {
+        width: 100%;
+        height: 30%;
+    }
+
+    .sm-img {
+        width: 15%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 32%;
+    }
+
+    .sm-img i {
+        font-size: 45px;
+    }
+
+    /*THIRD CONTAINER */
+
+    .container-3rd {
+        width: 100%;
+        height: 200vh;
+    }
+
+    .container-3rd h1 {
+        margin-left: 20%;
+    }
+
+    .div-team {
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .team-image {
+        width: 100%;
+    }
+
+    /* FOURTH CONTAINER */
+
+    .container-4th{
+        width: 600px;
+        height: 150vh;
+    }
+
+    .overall{
+        flex-direction: column;
+        height: 50%;
+        gap: 30%;
+    }
+
+    .feed{
+        width: 100%;
+        padding: unset;
+    }
+
+    .otherser{
+        width: 100%;
+    }
+
+    .otherser .b{
+        height: 250%;
+    }
+
+    .otherser p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1023px) {
+    .over-container {
+        background-color: red;
+        width: 1500px;
+        height: 1200vh;
+    }
+
+    .container-1st {
+        width: 1500px;
+        height: 100vh;
+    }
+    .container-1st video{
+        height: 100%;
+        width: 1500px;
+    }
+
+
+    .container-1st img {
+        width: 1500px;
+    }
+
+    nav .bar {
+        display: unset;
+        right: -10%;
+        top: 5%;
+    }
+
+    nav:hover {
+        left: 0%;
+        transition-duration: 2s;
+    }
+
+    i:hover {
+        color: transparent;
+    }
+
+    nav {
+        left: -100%;
+        top: 2%;
+        height: 10%;
+        font-size: 20px;
+        animation: nav;
+        animation-duration: 2s;
+    }
+
+    @keyframes nav {
+        0% {
+            top: -100%;
+            opacity: 0;
+        }
+
+        100% {
+            top: 2%;
+            opacity: 1;
+        }
+    }
+
+    .req {
+        padding-top: 8.5%;
+    }
+
+    .navsearch {
+        width: 25%;
+    }
+
+    .headding {
+        font-size: 30px;
+        top: 35%;
+        left: 70%;
+    }
+
+    .container-1st button {
+        height: 15%;
+        width: 35%;
+    }
+
+    /* SECOND CONTAINER */
+
+    .container-2nd {
+        width: 100%;
+        height: 650vh;
+    }
+
+    .container-2nd h1 {
+        font-size: 60px;
+    }
+
+    .service {
+        flex-direction: column;
+        height: 620vh;
+    }
+
+    .box {
+        width: 60%;
+        height: 150vh;
+        font-size: 35px;
+    }
+
+    .sm-img {
+        width: 15%;
+        height: 15%;
+        top: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sm-img i {
+        font-size: 60px;
+    }
+
+    /* THIRD CONTAINER */
+
+    .container-3rd {
+        width: 100%;
+        height: 330vh;
+    }
+
+    .container-3rd h1 {
+        margin-left: 28%;
+        font-size: 90px;
+    }
+
+    .div-team {
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .team-image {
+        background-color: red;
+        width: 50%;
+    }
+
+    .div-team {
+        width: 100%;
+        height: 300vh;
+    }
+
+    /* FOURTH CONTAINER */
+
+    .container-4th{
+        background-color: red;
+        width: 100%;
+        height: 110vh;
+    }
+}

@@ -1,0 +1,1539 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DynaPuff:wght@400..700&family=Mansalva&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dangrek&family=DynaPuff:wght@400..700&family=Mansalva&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dangrek&family=DynaPuff:wght@400..700&family=Mansalva&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.main-div {
+    background: linear-gradient(to right, black,lightblue);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 8%;
+    width: 95%;
+    border-radius: 20px;
+    position: fixed;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    top: 2%;
+    left: 2.5%;
+    z-index: 5;
+    backdrop-filter: blur(29px);
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+nav a:hover{
+    scale: 1.05;
+    text-shadow: 1px 1px 5px white;
+    transition-duration: 1s;
+}
+
+.circle {
+    background: linear-gradient(to right, black, lightblue);
+    height: 50%;
+    width: 25%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    border-radius: 50%;
+    animation-name: c;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    scale: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes c {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 2;
+    }
+}
+
+.image-div {
+    background-color: white;
+    height: 90%;
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    border-radius: 50px;
+    z-index: 4;
+    animation-name: image1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image1 {
+    0% {
+        left: 2%;
+    }
+
+    100% {
+        left: 15%;
+    }
+}
+
+.im2 {
+    background-color: white;
+    height: 90%;
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    border-radius: 50px;
+    z-index: 3;
+    animation-name: image2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image2 {
+    0% {
+        left: 2%;
+    }
+
+    100% {
+        left: 8%;
+    }
+}
+
+.im3 {
+    background-color: white;
+    height: 90%;
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    border-radius: 50px;
+    z-index: 1;
+    animation-name: image3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image3 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 2%;
+    }
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.top-section {
+    background-color: transparent;
+    height: 40%;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    z-index: 999;
+}
+
+.top-section h1 {
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5%;
+    color: blanchedalmond;
+}
+
+.top-section p {
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bottom-section {
+    background-color: transparent;
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    z-index: 999;
+}
+
+.bottom-section h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: blanchedalmond;
+}
+
+.title {
+    background: linear-gradient(to right,lightblue ,black);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 70px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+                                                /* SECOND CONTAINER */
+
+
+
+.first-div {
+    background: linear-gradient(to right, lightblue, black);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tumbnail1 {
+    background-color: violet;
+    height: 40%;
+    width: 35%;
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    z-index: 9;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px black;
+}
+
+.tumbnail1 h1 {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    bottom: -10%;
+    left: 65%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px 5px black;
+}
+
+.tumbnail1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    filter: blur(1px);
+}
+
+.tumbnail1:hover {
+    filter: blur(10px);
+    opacity: 1;
+    transition-duration: 2s;
+}
+
+.tumbnail1:hover~.d2 {
+    scale: 1;
+    transition-duration: 2s;
+    opacity: 1;
+    left: 35%;
+    top: 5%;
+    z-index: 99;
+}
+
+.tumbnail1:hover~.d2 .d-r {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.d2 {
+    background: linear-gradient(to right, black, lightblue);
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    scale: 0.1;
+    top: 0%;
+    left: 0%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    opacity: 0;
+}
+
+.d-l {
+    background-color: transparent;
+    height: 100%;
+    width: 40%;
+    position: relative;
+    padding: 5%;
+    left: 60%;
+    border-radius: 20px 0px 0px 20px;
+    opacity: 0;
+}
+
+.d-l img {
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    border-radius: 20px;
+}
+
+.tumbnail1:hover~.d2 .d-l {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.small-image {
+    background-color: transparent;
+    height: 30%;
+    width: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: -20%;
+    z-index: 1;
+}
+
+.small-image img {
+    height: 100%;
+    width: 100%;
+    filter: blur(0px);
+    border-radius: 50%;
+}
+
+.d-r {
+    background-color: transparent;
+    height: 100%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -40%;
+    opacity: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.d-r h1 {
+    position: absolute;
+    font-size: 110px;
+    color: white;
+    left: -25%;
+    top: -5%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span-1 {
+    color: yellow;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+}
+
+/* .feedback {
+    background-color: transparent;
+    height: 30%;
+    width: 70%;
+    position: absolute;
+    left: 23%;
+    font-size: 25px;
+} */
+
+.feedback p {
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span1 {
+    font-size: 50px;
+    position: absolute;
+    color: black;
+    top: -20%;
+    left: -13%;
+}
+
+.span2 {
+    position: absolute;
+    bottom: -25%;
+    left: 78%;
+    font-size: 50px;
+    color: black;
+}
+
+.icons {
+    background-color: transparent;
+    height: 15%;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+                                                        /* SECOND TUMBNAIL */
+
+
+.tumbnail2 {
+    background-color: violet;
+    height: 40%;
+    width: 35%;
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+    z-index: 9;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px black;
+}
+
+.tumbnail2 h1 {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    top: -10%;
+    left: -35%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px 5px black;
+}
+
+.tumbnail2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    filter: blur(1px);
+}
+
+.tumbnail2:hover {
+    filter: blur(10px);
+    opacity: 1;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+
+.tumbnail2:hover~.d3 {
+    scale: 1;
+    transition-duration: 2s;
+    opacity: 1;
+    left: 2%;
+    top: 5%;
+    z-index: 99;
+}
+
+.tumbnail2:hover~.d3 .d-r2 {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.d3 {
+    background: linear-gradient(to right, black, lightblue);
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    scale: 0.1;
+    top: 0%;
+    left: -30%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    opacity: 0;
+}
+
+.d-l2 {
+    background-color: transparent;
+    height: 100%;
+    width: 40%;
+    position: relative;
+    padding: 5%;
+    left: 60%;
+    border-radius: 20px 0px 0px 20px;
+    opacity: 0;
+}
+
+.d-l2 img {
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    border-radius: 20px;
+}
+
+.tumbnail2:hover~.d3 .d-l2 {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.small-image {
+    background-color: transparent;
+    height: 30%;
+    width: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: -20%;
+    z-index: 1;
+}
+
+.small-image img {
+    height: 100%;
+    width: 100%;
+    filter: blur(0px);
+    border-radius: 50%;
+}
+
+.d-r2 {
+    background-color: transparent;
+    height: 100%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -40%;
+    opacity: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.d-r2 h1 {
+    position: absolute;
+    font-size: 110px;
+    color: black;
+    left: -25%;
+    top: -5%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span-2 {
+    color: yellow;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+}
+
+/* .feedback {
+    background-color: transparent;
+    height: 30%;
+    width: 70%;
+    position: absolute;
+    left: 23%;
+    font-size: 25px;
+} */
+
+.feedback p {
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span3 {
+    font-size: 50px;
+    position: absolute;
+    color: black;
+    top: -20%;
+    left: -13%;
+}
+
+.span4 {
+    position: absolute;
+    bottom: -25%;
+    left: 78%;
+    font-size: 50px;
+    color: black;
+}
+
+.icons2 {
+    background-color: transparent;
+    height: 15%;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+                                                                /* THIRT THUMBNAIL */
+
+.tumbnail3 {
+    background-color: violet;
+    height: 40%;
+    width: 35%;
+    position: absolute;
+    top: 55%;
+    left: 2.5%;
+    z-index: 9;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px black;
+}
+
+.tumbnail3 h1 {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    bottom: 10%;
+    left: 65%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px 5px black;
+}
+
+.tumbnail3 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    filter: blur(1px);
+}
+
+.tumbnail3:hover {
+    filter: blur(10px);
+    opacity: 1;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+
+.tumbnail3:hover~.d4 {
+    scale: 1;
+    transition-duration: 2s;
+    opacity: 1;
+    left: 35%;
+    top: 15%;
+    z-index: 99;
+}
+
+.tumbnail3:hover~.d4 .d-r3 {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.d4 {
+    background: linear-gradient(to right, black, lightblue);
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    scale: 0.1;
+    top: 0%;
+    left: -30%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    opacity: 0;
+}
+
+.d-l3 {
+    background-color: transparent;
+    height: 100%;
+    width: 40%;
+    position: relative;
+    padding: 5%;
+    left: 60%;
+    border-radius: 20px 0px 0px 20px;
+    opacity: 0;
+}
+
+.d-l3 img {
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    border-radius: 20px;
+}
+
+.tumbnail3:hover~.d4 .d-l3 {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.small-image {
+    background-color: transparent;
+    height: 30%;
+    width: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: -20%;
+    z-index: 1;
+}
+
+.small-image img {
+    height: 100%;
+    width: 100%;
+    filter: blur(0px);
+    border-radius: 50%;
+}
+
+.d-r3 {
+    background-color: transparent;
+    height: 100%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -40%;
+    opacity: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.d-r3 h1 {
+    position: absolute;
+    font-size: 110px;
+    color: black;
+    left: -25%;
+    top: -5%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span-3 {
+    color: yellow;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+}
+
+/* .feedback {
+    background-color: transparent;
+    height: 30%;
+    width: 70%;
+    position: absolute;
+    left: 23%;
+    font-size: 25px;
+} */
+
+.feedback p {
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span5 {
+    font-size: 50px;
+    position: absolute;
+    color: black;
+    top: -20%;
+    left: -13%;
+}
+
+.span6 {
+    position: absolute;
+    bottom: -25%;
+    left: 78%;
+    font-size: 50px;
+    color: black;
+}
+
+.icons3 {
+    background-color: transparent;
+    height: 15%;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+                                                            /* FOURTH THUMBNAIL */
+
+
+.tumbnail4 {
+    background-color: violet;
+    height: 40%;
+    width: 35%;
+    position: absolute;
+    top: 55%;
+    right: 2.5%;
+    z-index: 9;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px black;
+}
+
+.tumbnail4 h1 {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    top: -10%;
+    left: -33%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px 5px black;
+}
+
+.tumbnail4 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    filter: blur(1px);
+}
+
+.tumbnail4:hover {
+    filter: blur(10px);
+    opacity: 1;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+
+.tumbnail4:hover~.d5 {
+    scale: 1;
+    transition-duration: 2s;
+    opacity: 1;
+    left: 2.5%;
+    top: 15%;
+    z-index: 10;
+}
+
+.tumbnail4:hover~.d5 .d-r4 {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.d5 {
+    background: linear-gradient(to right, black, lightblue);
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    scale: 0.1;
+    top: 0%;
+    left: -30%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    opacity: 0;
+}
+
+.d-l4 {
+    background-color: transparent;
+    height: 100%;
+    width: 40%;
+    position: relative;
+    padding: 5%;
+    left: 60%;
+    border-radius: 20px 0px 0px 20px;
+    opacity: 0;
+}
+
+.d-l4 img {
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    border-radius: 20px;
+}
+
+.tumbnail4:hover~.d5 .d-l4 {
+    left: 0%;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.small-image {
+    background-color: transparent;
+    height: 30%;
+    width: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: -20%;
+    z-index: 1;
+}
+
+.small-image img {
+    height: 100%;
+    width: 100%;
+    filter: blur(0px);
+    border-radius: 50%;
+}
+
+.d-r4 {
+    background-color: transparent;
+    height: 100%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -40%;
+    opacity: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.d-r4 h1 {
+    position: absolute;
+    font-size: 110px;
+    color: black;
+    left: -25%;
+    top: -5%;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span-4 {
+    color: yellow;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+}
+
+.feedback {
+    background-color: transparent;
+    height: 30%;
+    width: 70%;
+    position: absolute;
+    left: 23%;
+    font-size: 25px;
+}
+
+.feedback p {
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span7 {
+    font-size: 50px;
+    position: absolute;
+    color: black;
+    top: -20%;
+    left: -13%;
+}
+
+.span8 {
+    position: absolute;
+    bottom: -25%;
+    left: 78%;
+    font-size: 50px;
+    color: black;
+}
+
+.icons4 {
+    background-color: transparent;
+    height: 15%;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+                                                    /*THIRD CONTAINER */
+
+.container-6th{
+    background: linear-gradient(to top,lightgreen,black);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+
+.sixth-login{
+    background-color:rgba(255, 255, 255, 0.5);
+    height: 90%;
+    width: 40%;
+    position: absolute;
+    z-index: 999;
+    top: 5%;
+    border-radius: 10px;
+    left: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    gap: 1%;
+}
+
+.container-6th h2{
+    font-size: 50px;
+}
+
+textarea{
+    background-color: transparent;
+    height: 35%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+    padding-left: 1%;
+}
+
+input{
+    background-color: transparent;
+    height: 10%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+    padding-left: 1%;
+}
+
+.container-6th button{
+    background-color: transparent;
+    height: 7%;
+    width: 30%;
+    border: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.container-6th button:hover{
+    background-color: white;
+    scale: 1.1;
+    transition-duration: 1s;
+}
+
+.sixth-title{
+    background-color: transparent;
+    height: 30%;
+    width: 50%;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    text-align: center;
+}
+
+.container-6th .sixth-title h1{
+    font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 60px;
+  font-variation-settings:
+    "wdth" 100;
+    color: black;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+
+    .main-div {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .image-div {
+        height: 50vh;
+        border-radius: 10px;
+    }
+
+    .circle {
+        height: 25vh;
+        width: 50%;
+        top: 30%;
+        left: 20%;
+    }
+
+    .image-div img {
+        border-radius: 10px;
+    }
+
+    .top-section {
+        /* background-color: red; */
+        height: 60vh;
+        font-size: 7px;
+        right: 7%;
+    }
+
+    .bottom-section {
+        /* background-color: red; */
+        height: 10vh;
+        top: 65%;
+    }
+
+    .bottom-section h1 {
+        font-size: 10px;
+    }
+
+    .title {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    /*SECOND PAGE  */
+
+
+    .first-div {
+        width: 100%;
+        height: 250vh;
+    }
+
+    .tumbnail1 {
+        top: 2%;
+        width: 100%;
+        height: 50vh;
+        left: 0;
+    }
+
+    .tumbnail1 h1 {
+        font-size: 40px;
+        left: 10%;
+        top: 80%;
+    }
+
+    .d2 {
+        width: 100%;
+        height: 50vh;
+        left: -50%;
+        z-index: 999;
+    }
+
+    .tumbnail1:hover~.d2 {
+        left: 0;
+    }
+
+    .d-r h1 {
+        font-size: 30px;
+        left: -30%;
+        top: 10%;
+    }
+
+    .span-1 {
+        font-size: 30px;
+    }
+
+    .feedback p {
+        font-size: 10px;
+    }
+
+    .span1 {
+        font-size: 20px;
+        top: -17px;
+        left: -22px;
+    }
+
+    .span2 {
+        font-size: 20px;
+        bottom: -10px;
+        left: 85.5px;
+    }
+
+    .icons {
+        font-size: 10px;
+    }
+
+    /* SECOND TUMBNAIL */
+
+    .tumbnail2 {
+        top: 26%;
+        width: 100%;
+        height: 50vh;
+        left: 0;
+    }
+
+    .tumbnail2 h1 {
+        font-size: 40px;
+        left: 10%;
+        top: 80%;
+    }
+
+    .d3 {
+        width: 100%;
+        height: 50vh;
+        left: 0%;
+        top: 29%;
+        z-index: 999;
+    }
+
+    .tumbnail2:hover~.d3 {
+        left: 0;
+        top: 29%;
+    }
+
+    .d-r2 h1 {
+        font-size: 30px;
+        left: -30%;
+        top: 10%;
+    }
+
+    .span-2 {
+        font-size: 30px;
+    }
+
+    .feedback p {
+        font-size: 10px;
+    }
+
+    .icons2 {
+        font-size: 10px;
+    }
+
+
+    /* THIRD TUMBNAIL */
+
+    .tumbnail3 {
+        top: 51%;
+        width: 100%;
+        height: 50vh;
+        left: 0;
+    }
+
+    .tumbnail3 h1 {
+        font-size: 40px;
+        left: 10%;
+        top: 80%;
+    }
+
+    .d4 {
+        width: 100%;
+        height: 50vh;
+        left: 0%;
+        top: 53%;
+        z-index: 999;
+    }
+
+    .tumbnail3:hover~.d4 {
+        left: 0;
+        top: 53%;
+    }
+
+    .d-r3 h1 {
+        font-size: 30px;
+        left: -30%;
+        top: 10%;
+    }
+
+    .span-3 {
+        font-size: 30px;
+    }
+
+    .feedback p {
+        font-size: 10px;
+    }
+
+    .icons3 {
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 15px;
+    }
+
+    /* FOURTH TUMBNAIL */
+
+    .tumbnail4 {
+        top: 76%;
+        width: 100%;
+        height: 50vh;
+        left: 0;
+    }
+
+    .tumbnail4 h1 {
+        font-size: 40px;
+        left: 10%;
+        top: 80%;
+    }
+
+    .d5 {
+        width: 100%;
+        height: 50vh;
+        left: 0%;
+        top: 78%;
+        z-index: 999;
+    }
+
+    .tumbnail4:hover~.d5 {
+        left: 0;
+        top: 78%;
+    }
+
+    .d-r4 h1 {
+        font-size: 30px;
+        left: -30%;
+        top: 10%;
+    }
+
+    .span-4 {
+        font-size: 30px;
+    }
+
+    .feedback p {
+        font-size: 10px;
+    }
+
+    .icons4 {
+        font-size: 20px;
+    }
+
+                                                            /* THIRD CONTAINER */
+ .container-6th{
+        width: 100%;
+        height: 150vh;
+        overflow: hidden;
+    }
+
+    .sixth-login{
+        height: 100vh;
+        width: 100%;
+        left: 0%;
+    }
+
+    .sixth-title{
+        height: 50vh;
+        top: 80%;
+        width: 100%;
+        left: 0;
+    }
+
+    .container-6th .sixth-title h1{
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (min-width:601px) and (max-width:1023px) {
+
+    .main-div {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .bottom-section h1 {
+        font-size: 30px;
+    }
+
+    .circle {
+        height: 30vh;
+        top: 30%;
+    }
+
+    /* SECOND PAGE */
+
+    .first-div {
+        width: 100%;
+        height: 450vh;
+    }
+
+    .tumbnail1 {
+        top: 2%;
+        width: 100%;
+        height: 80vh;
+        left: 0;
+    }
+
+    .tumbnail1 h1 {
+        font-size: 90px;
+        left: 20%;
+    }
+
+    .d2 {
+        height: 80vh;
+        width: 100%;
+        left: 0%;
+        top: 5%;
+    }
+
+    .tumbnail1:hover~.d2 {
+        left: 0%;
+        top: 5%;
+    }
+
+    .feedback p {
+        font-size: 23px;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    /* SECOND TUMBNAIL */
+    .tumbnail2 {
+        top: 25%;
+        width: 100%;
+        height: 80vh;
+        left: 0;
+    }
+
+    .tumbnail2 h1 {
+        font-size: 90px;
+        left: 20%;
+        top: 73%;
+    }
+
+    .d3 {
+        height: 80vh;
+        width: 100%;
+        left: 0%;
+        top: 28%;
+    }
+
+    .tumbnail2:hover~.d3 {
+        left: 0%;
+        top: 28%;
+    }
+
+    .feedback p {
+        font-size: 23px;
+    }
+
+    .icons2 {
+        font-size: 30px;
+    }
+
+    /* THIRD TUMBNAIL */
+
+    .tumbnail3 {
+        top: 48%;
+        width: 100%;
+        height: 80vh;
+        left: 0;
+    }
+
+    .tumbnail3 h1 {
+        font-size: 90px;
+        left: 20%;
+        top: 73%;
+    }
+
+    .d4 {
+        height: 80vh;
+        width: 100%;
+        left: 0%;
+        top: 52%;
+    }
+
+    .tumbnail3:hover~.d4 {
+        left: 0%;
+        top: 52%;
+    }
+
+    .feedback p {
+        font-size: 23px;
+    }
+
+    .icons3 {
+        font-size: 30px;
+    }
+
+    /* FOURTH TUMBNAIL */
+
+    .tumbnail4 {
+        top: 71%;
+        width: 100%;
+        height: 80vh;
+        left: 0;
+    }
+
+    .tumbnail4 h1 {
+        font-size: 90px;
+        left: 20%;
+        top: 73%;
+    }
+
+    .d5 {
+        height: 80vh;
+        width: 100%;
+        left: 0%;
+        top: 75%;
+        box-shadow: none;
+    }
+
+    .tumbnail4:hover~.d5 {
+        left: 0%;
+        top: 75%;
+    }
+
+    .feedback p {
+        font-size: 23px;
+    }
+
+    .icons4 {
+        font-size: 30px;
+    }
+
+
+                                                    /* THIRD CONTAINER */
+
+    .container-6th{
+        width: 100%;
+    }
+
+    .container-6th .sixth-title{
+        top: 30%;
+    }
+
+    .container-6th .sixth-title h1{
+        font-size: 50px;
+    }
+}

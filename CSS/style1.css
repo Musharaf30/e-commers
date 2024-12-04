@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.overall-container {
+    background-color: black;
+    height: 400vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* first page */
+
+.container-1st {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav {
+    background-color:gray;
+    height: 100%;
+    width: 20%;
+    top: 0%;
+    text-align: center;
+    padding: 2%;
+    position: fixed;
+    color: white;
+    animation-name: nav;
+    animation-duration: 2s;
+    z-index: 999;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+input {
+    display: none;
+}
+
+.nav a:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+    color: #40e0d0;
+}
+
+@keyframes nav {
+    0% {
+        left: -350px;
+        background-color: black;
+    }
+
+    100% {
+        left: 0;
+        background-color: grey;
+    }
+}
+
+.small-img {
+    height: 15%;
+    width: 40%;
+    border-radius: 55%;
+    top: 0;
+}
+
+.nav h3 {
+    color: black;
+    font-size: 50px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.div-icons {
+    background-color: transparent;
+    height: 8%;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.div-navigation {
+    background-color: transparent;
+    height: 70%;
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: start;
+}
+
+
+.profile {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    left: 302px;
+}
+
+.profile h1 {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 5%;
+    font-size: 90px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-right: 5px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 10s steps(20, end), blink-caret 0.75s infinite;
+    animation-delay: 0s, 4s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.profile p {
+    position: absolute;
+    color: white;
+    top: 35%;
+    left: 10%;
+    font-size: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    animation-name: head;
+    animation-duration: 10s;
+}
+
+.bt1 {
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    background-color: white;
+    font-weight: 600;
+}
+
+.bt2 {
+    position: absolute;
+    top: 37%;
+    left: 28%;
+    background-color: white;
+    font-weight: 600;
+}
+
+.bars {
+    display: none;
+}
+
+button:hover {
+    scale: 1.10;
+    transition-duration: 1s;
+}
+
+.div-icons i:hover {
+    color: black;
+    scale: 1.30;
+    transition-duration: 1s;
+    rotate: 360deg;
+    cursor: pointer;
+}
+
+.div-navigation h4:hover {
+    color: black;
+    scale: 1.30;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+/* second container */
+
+.container-2nd {
+    background-image: linear-gradient(to right, darkgray, lightgray);
+    background-image: linear-gradient(to right, #40e0d0, #ff7f50);
+    height: 100vh;
+    width: 80%;
+    position: relative;
+    left: 302px;
+    color: white;
+    padding: 2%;
+}
+
+.about-card {
+    background-color: transparent;
+    height: 20%;
+    width: 100%;
+    padding: 1%;
+}
+
+.info-card {
+    background-color: transparent;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+
+.img-info {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.self-info {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 60%;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.i-info {
+    margin-top: 10%;
+    height: 80%;
+    width: 90%;
+}
+
+.self-details {
+    background-color: transparent;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+
+.self-details-left {
+    background-color: transparent;
+    height: 100%;
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.self-details-right {
+    background-color: transparent;
+    height: 100%;
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.self-info p,
+h1 {
+    margin-left: 2%;
+}
+
+.about-card p {
+    margin-left: 3%;
+}
+
+span {
+    color: black;
+}
+
+.container-2nd h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+/* third container */
+
+.container-3rd {
+    background-image: linear-gradient(to bottom, darkgray, lightgray);
+    background-image: linear-gradient(to right, #40e0d0, #ff7f50);
+    height: 100vh;
+    width: 80%;
+    position: relative;
+    left: 302px;
+    padding: 2%;
+}
+
+.about {
+    transition-delay: 1s;
+    transition-duration: 2s;
+}
+
+.service-card-top {
+    background-color: transparent;
+    height: 35%;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    gap: 1%;
+}
+
+.service-card-bottom {
+    height: 35%;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    gap: 1%;
+}
+
+.service-box {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 34%;
+    box-shadow: 3px 3px 3px black;
+    padding: 4% 2% 2% 2%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box2 {
+    transition-delay: 1s;
+}
+
+.box3 {
+    transition-delay: 2s;
+}
+
+.box4 {
+    transition-delay: 3s;
+}
+
+.box5 {
+    transition-delay: 4s;
+}
+
+.box6 {
+    transition-delay: 5s;
+}
+
+.service-box h2 {
+    background-color: white;
+    margin: auto;
+    width: 13%;
+    height: 25%;
+    border-radius: 50%;
+    padding-top: 2%;
+    margin-bottom: 1%;
+}
+
+.service-card-top .service-box h4 {
+    font-family: "Agdasima", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.service-card-top .service-box p {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.service-card-bottom .service-box h4 {
+    font-family: "Agdasima", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.service-card-bottom .service-box p {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-3rd h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* fourth container */
+
+.container-4th {
+    background-image: linear-gradient(to right, darkgray, lightgray);
+    background-image: linear-gradient(to right, #40e0d0, #ff7f50);
+    background-color: #f9f9f9;
+    height: 100vh;
+    width: 100%;
+    width: 80%;
+    position: relative;
+    left: 302px;
+    padding: 2%;
+    display: flex;
+    color: white;
+}
+
+.footer-left-side {
+    background-color: transparent;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding: 1%;
+}
+
+.address-box {
+    background-color: transparent;
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+}
+
+.footer-left-side p {
+    margin-left: 10%;
+}
+
+.phone-box {
+    background-color: transparent;
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+}
+
+.mail-box {
+    background-color: transparent;
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.footer-right-side {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 60%;
+    padding: 2%;
+}
+
+.name-box {
+    height: 15%;
+    width: 100%;
+    display: flex;
+}
+
+.first-name-box {
+    background-color: pink;
+    height: 100%;
+    width: 50%;
+    padding: 4% 2% 0% 0%
+}
+
+.second-name-box {
+    height: 100%;
+    width: 50%;
+    padding: 4% 2% 0% 0%
+}
+
+.first-name-box input {
+    width: 100%;
+    height: 48%;
+}
+
+.second-name-box input {
+    width: 100%;
+    height: 48%;
+}
+
+input {
+    height: 5%;
+    width: 48%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 50%;
+}
+
+button {
+    background-color: orangered;
+    height: 5%;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 3%;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+
+    .overall-container {
+        background-color: green;
+        height: 790vh;
+        width: 100%;
+    }
+
+    .container-1st {
+        height: 100vh;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    video {
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav {
+        background-color: lightgray;
+        left: -430px;
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        animation: unset;
+    }
+
+    form #three-bars:checked~.nav {
+        left: 0px;
+        transition-duration: 2s;
+    }
+
+    .bars {
+        color: white;
+        display: unset;
+        position: fixed;
+        top: 2%;
+        left: 85%;
+        z-index: 98;
+    }
+
+    .div-icons {
+        font-size: 20px;
+    }
+
+    .nav h3 {
+        font-size: 50px;
+    }
+
+    .profile {
+        position: unset;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .profile p {
+        top: 30%;
+    }
+
+    .profile h1 {
+        font-size: 40px;
+    }
+
+    .bt1 {
+        top: 35%;
+        height: 6%;
+        width: 30%;
+    }
+
+    .bt2 {
+        top: 35%;
+        height: 6%;
+        width: 30%;
+        left: 45%;
+    }
+
+
+    /* second container */
+
+    .container-2nd {
+        height: 330vh;
+        width: 100%;
+        left: 0;
+    }
+
+    .about-card {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .info-card {
+        height: 270vh;
+        flex-direction: column;
+    }
+
+    .img-info {
+        width: 100%;
+        height: 30%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .self-info {
+        height: 70%;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        padding-bottom: 1%;
+    }
+
+    /* third container */
+
+    .container-3rd {
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .service-card-top {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .service-card-bottom {
+        flex-direction: column;
+        height: 100%;
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+
+    .service-card-top h2 {
+        font-size: 15px;
+        width: 12%;
+        padding: 2%;
+    }
+
+    .service-card-bottom h2 {
+        font-size: 15px;
+        width: 12%;
+        padding: 2%;
+    }
+
+    .service-box {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1%;
+        box-shadow: 2px 0px 2px black;
+    }
+
+    /* fourth containet */
+
+    .container-4th {
+        left: 0;
+        height: 180vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-left-side p {
+        margin-left: 5%;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    .footer-left-side {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .footer-right-side {
+        width: 100%;
+        height: 90vh;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1024px) {
+
+    .overall-container {
+        background-color: violet;
+        height: 875vh;
+        width: 100%;
+    }
+
+    .container-1st {
+        background-color: green;
+        height: 100vh;
+        width: auto;
+        background-color: transparent;
+        padding: 5%;
+    }
+
+    .nav {
+        left: -770px;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: 999;
+        animation: unset;
+    }
+
+    .profile {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .bars {
+        display: unset;
+        left: 800px;
+        top: 20px;
+    }
+
+    .nav:hover {
+        left: 0;
+        transition-duration: 1s;
+    }
+
+    .nav:hover h2 {
+        opacity: 0;
+    }
+
+    .bt1 {
+        top: 40%;
+    }
+
+    .bt2 {
+        top: 40%;
+    }
+
+
+    /* second container */
+
+    .container-2nd {
+        height: 240vh;
+        width: 100%;
+        left: 0;
+    }
+
+    .about-card {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .info-card {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .img-info {
+        width: 100%;
+        height: 30%;
+        border-radius: 10px 10px 0px 0px;
+        padding-bottom: 1%;
+    }
+
+    .img-info img {
+        width: 70%;
+    }
+
+    .self-info {
+        height: 70%;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        padding-bottom: 1%;
+    }
+
+    /* third container */
+
+    .container-3rd {
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .service-card-top {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .service-card-bottom {
+        flex-direction: column;
+        height: 100%;
+        margin-top: unset;
+    }
+
+    .service-card-top h2 {
+        width: 8%;
+        padding: 2%;
+        font-size: 15px;
+    }
+
+    .service-card-bottom h2 {
+        width: 8%;
+        padding: 2%;
+        font-size: 15px;
+    }
+
+    .service-box {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1%;
+    }
+
+    /* fourth containet */
+
+    .container-4th {
+        left: 0;
+        height: 350vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-left-side p {
+        margin-left: 5%;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    .footer-left-side {
+        width: 100%;
+        height: 60%;
+    }
+
+    .footer-right-side {
+        width: 100%;
+        height: 40%;
+    }
+}

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.overall-container{
+    background-image: linear-gradient(to right,black,teal);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    background-color: grey;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    border-radius: 20px;
+    padding: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.arrow{
+    position: absolute;
+    left: 65%;
+    top: -15%;
+    rotate: -40deg;
+    color: teal;
+    font-size: 38px;
+}
+
+.title:hover .arrow{
+    left: 32%;
+    top: 13.1%;
+    transition-duration: .2s;
+}
+
+.title:hover{
+    scale: 1.1;
+    transition-duration: 2s;
+}
+
+.title h1{
+    font-family: "DynaPuff", serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.title p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title button{
+    height: 10%;
+    width: 40%;
+    margin-top: 5%;
+    margin-right:5% ;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.login-div{
+    background-image: url("https://cdn.pixabay.com/photo/2012/09/15/02/22/forest-56930_640.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 30%;
+    border-radius: 10px;
+    position: absolute;
+    right: 5%;
+}
+
+.content-div{
+    background-color: white;
+    backdrop-filter:80px ;
+    height: 90%; 
+    width:70%;
+    border-radius: 20px;
+    padding:2%;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 2%;
+    border-radius: 20px;
+    border: none;
+    border: 2px solid black;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+
+.checkbox{
+    height: 5%;
+    width: 5%;
+    float: left;
+}
+
+.login-div button{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+.login-div:hover{
+    scale: 1.05;
+    transition-duration: 2s;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.imagg{
+    background-color: red;
+    background-image: url("https://cdn.pixabay.com/photo/2012/09/15/02/22/forest-56930_640.jpg");
+    background-position-y:300px ;
+    height: 33%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+label{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: olive;
+}
+::placeholder{
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: green;
+}
+
+h3{
+    margin: auto;
+    font-size:30px;
+    margin-bottom: 3%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: olive;
+}
+
+h2{
+    margin-top: 5%;
+    font-size: 10px;
+}
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    
+    .overall-container{
+        width: 100%;
+        height: 190vh;
+    }
+
+    .title{
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 1%;
+        padding-left: 1%;
+    }
+
+    .title:hover{
+        scale: unset;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .title:hover .arrow{
+        left: 14.7%;
+        top: 5.5%;
+        transition-duration: .2s;
+        font-size: 14px;
+    }
+
+    .title button{
+        height: 8%;
+        width: 50%;
+    }
+
+    .login-div{
+        width: 100%;
+        top: 105%;
+        left: 0%;
+    }
+
+    .imagg{
+        height: 25%;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1023px) {
+    
+    .overall-container{
+        width: 100%;
+        height: 190vh;
+    }
+
+    .title{
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 1%;
+        padding-left: 1%;
+    }
+
+    .title:hover{
+        scale: unset;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .title:hover .arrow{
+        left: 6.8%;
+        top: 9.2%;
+        transition-duration: .2s;
+        font-size: 14px;
+    }
+
+    .title button{
+        height: 10%;
+        width: 30%;
+    }
+
+    .login-div{
+        height: 100vh;
+        width: 100%;
+        top: 105%;
+        left: 0%;
+    }
+
+    .imagg{
+        height: 35%;
+    }
+}
